@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Performance Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            margin-bottom: 25px;
+        }
+        .controls {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        select {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            min-width: 250px;
+            font-size: 1em;
+            background-color: #fff;
+        }
+        select:disabled {
+            background-color: #e9ecef;
+            cursor: not-allowed;
+        }
+        #plot-container {
+            width: 100%;
+            height: 600px; /* Adjust as needed */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f8f9fa url('data:image/svg+xml;charset=UTF-8,<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23dce4ec"><path d="M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10-10-4.477-10-10z"/></g></g></svg>') center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 1.2em;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1>Interactive Building Performance Dashboard</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label for="dwelling-select">Select Dwelling</label>
+                <select id="dwelling-select">
+                    <option value="">-- Please choose a dwelling --</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="window-select">Select Window / Door</label>
+                <select id="window-select" disabled>
+                    <option value="">-- Select a dwelling first --</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="plot-select">Select Plot Type</label>
+                <select id="plot-select" disabled>
+                    <option value="">-- Select a window first --</option>
+                </select>
+            </div>
+        </div>
+        <div id="plot-container">
+            <p>Your selected plot will be displayed here.</p>
+        </div>
+    </div>
+
+    <script>
+        // Define plot type friendly names
+        const PLOT_TYPES = {
+            "angle_duration_heatmap": "Heatmap: Angle vs. Duration",
+            "energy_heatmap": "Heatmap: Energy Impact",
+            "angle_timeseries": "Time Series: Opening Angle"
+        };
+
+        // DOM Elements
+        const dwellingSelect = document.getElementById('dwelling-select');
+        const windowSelect = document.getElementById('window-select');
+        const plotSelect = document.getElementById('plot-select');
+        const plotContainer = document.getElementById('plot-container');
+        
+        let plotData = {};
+
+        // Fetch and load the manifest data
+        async function loadManifest() {
+            try {
+                const response = await fetch('plot_manifest.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                plotData = await response.json();
+                populateDwellings();
+            } catch (error) {
+                plotContainer.innerHTML = `<p style="color: red;">Error: Could not load plot_manifest.json. Please ensure the file exists and the web page is served correctly (not opened as a local file if you have CORS issues).</p>`;
+                console.error("Failed to load manifest:", error);
+            }
+        }
+
+        // Populate the first dropdown
+        function populateDwellings() {
+            const dwellings = Object.keys(plotData);
+            dwellings.forEach(dwelling => {
+                const option = new Option(dwelling.replace(/_/g, ' ').replace('apt', 'Apt'), dwelling);
+                dwellingSelect.add(option);
+            });
+        }
+
+        // Event Listeners
+        dwellingSelect.addEventListener('change', () => {
+            const selectedDwelling = dwellingSelect.value;
+            // Reset subsequent dropdowns
+            windowSelect.innerHTML = '<option value="">-- Select a window --</option>';
+            plotSelect.innerHTML = '<option value="">-- Select a window first --</option>';
+            windowSelect.disabled = true;
+            plotSelect.disabled = true;
+
+            if (selectedDwelling && plotData[selectedDwelling]) {
+                const windows = Object.keys(plotData[selectedDwelling]);
+                if (windows.length > 0) {
+                    windows.forEach(window => {
+                        const option = new Option(window, window);
+                        windowSelect.add(option);
+                    });
+                    windowSelect.disabled = false;
+                } else {
+                     windowSelect.innerHTML = '<option value="">-- No windows available --</option>';
+                }
+            }
+            updatePlot();
+        });
+
+        windowSelect.addEventListener('change', () => {
+            const selectedDwelling = dwellingSelect.value;
+            const selectedWindow = windowSelect.value;
+            // Reset plot type dropdown
+            plotSelect.innerHTML = '<option value="">-- Select a plot type --</option>';
+            plotSelect.disabled = true;
+
+            if (selectedDwelling && selectedWindow && plotData[selectedDwelling][selectedWindow]) {
+                const availablePlots = Object.keys(plotData[selectedDwelling][selectedWindow]);
+                 if (availablePlots.length > 0) {
+                    availablePlots.forEach(plotKey => {
+                        const option = new Option(PLOT_TYPES[plotKey] || plotKey, plotKey);
+                        plotSelect.add(option);
+                    });
+                    plotSelect.disabled = false;
+                 } else {
+                     plotSelect.innerHTML = '<option value="">-- No plots available --</option>';
+                 }
+            }
+            updatePlot();
+        });
+
+        plotSelect.addEventListener('change', updatePlot);
+
+        // Main function to update the iframe
+        function updatePlot() {
+            const dwelling = dwellingSelect.value;
+            const window = windowSelect.value;
+            const plotType = plotSelect.value;
+
+            if (dwelling && window && plotType) {
+                const filePath = plotData[dwelling]?.[window]?.[plotType];
+                if (filePath) {
+                    plotContainer.innerHTML = `<iframe src="${filePath}"></iframe>`;
+                } else {
+                    plotContainer.innerHTML = `<p>This plot is not available. Please make another selection.</p>`;
+                }
+            } else {
+                 plotContainer.innerHTML = `<p>Your selected plot will be displayed here.</p>`;
+            }
+        }
+
+        // Initial load
+        document.addEventListener('DOMContentLoaded', loadManifest);
+    </script>
+
+</body>
+</html>
