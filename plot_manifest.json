@@ -1,256 +1,208 @@
 {
   "Victor_apt": {
     "Dining Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Victor_apt_Dining_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Victor_apt_Dining_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Victor_apt_Dining_Angle.html"
     },
     "Upstairs Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Victor_apt_Upstairs_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Victor_apt_Upstairs_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Victor_apt_Upstairs_Angle.html"
     }
   },
   "Nischal_apt": {
     "Bedroom Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Nischal_apt_Bedroom_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Nischal_apt_Bedroom_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Nischal_apt_Bedroom_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Nischal_apt_Bedroom_Angle.html"
     },
     "Livingroom Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Nischal_apt_Livingroom_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Nischal_apt_Livingroom_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Nischal_apt_Livingroom_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Nischal_apt_Livingroom_Angle.html"
     }
   },
   "Halmstad_apt": {
     "Kitchen Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Halmstad_apt_Kitchen_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Halmstad_apt_Kitchen_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Halmstad_apt_Kitchen_Angle.html"
     },
     "Bedroom Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Halmstad_apt_Bedroom_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Halmstad_apt_Bedroom_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Halmstad_apt_Bedroom_Angle.html"
     }
   },
   "Linea_apt": {
     "Kitchen Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Linea_apt_Kitchen_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Kitchen_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Linea_apt_Kitchen_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Kitchen_Window_Angle.html"
     },
     "Living room door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Linea_apt_Living_room_door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Living_room_door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Linea_apt_Living_room_door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Living_room_door_Angle.html"
     },
     "Living room Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Linea_apt_Living_room_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Living_room_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Linea_apt_Living_room_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Living_room_Window_Angle.html"
     },
     "Bedroom Window Opening Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Linea_apt_Bedroom_Window_Opening_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Bedroom_Window_Opening_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Linea_apt_Bedroom_Window_Opening_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Linea_apt_Bedroom_Window_Opening_Angle.html"
     }
   },
   "Niko_apt": {
     "Bedroom Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Niko_apt_Bedroom_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Niko_apt_Bedroom_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Niko_apt_Bedroom_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Niko_apt_Bedroom_Window_Angle.html"
     },
     "Kids Room Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Niko_apt_Kids_Room_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Niko_apt_Kids_Room_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Niko_apt_Kids_Room_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Niko_apt_Kids_Room_Window_Angle.html"
     },
     "Living Room Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Niko_apt_Living_Room_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Niko_apt_Living_Room_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Niko_apt_Living_Room_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Niko_apt_Living_Room_Window_Angle.html"
     }
   },
   "Julia_apt": {
     "Living Room left Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Julia_apt_Living_Room_left_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_Living_Room_left_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Julia_apt_Living_Room_left_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_Living_Room_left_Angle.html"
     },
     "LivingRoom Right Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Julia_apt_LivingRoom_Right_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_LivingRoom_Right_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Julia_apt_LivingRoom_Right_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_LivingRoom_Right_Angle.html"
     },
     "Kitchen Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Julia_apt_Kitchen_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_Kitchen_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Julia_apt_Kitchen_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_Kitchen_Window_Angle.html"
     },
     "Bedroom Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Julia_apt_Bedroom_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_Bedroom_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Julia_apt_Bedroom_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Julia_apt_Bedroom_Door_Angle.html"
     }
   },
   "Gun_apt": {
     "Bedroom Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Gun_apt_Bedroom_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Gun_apt_Bedroom_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Gun_apt_Bedroom_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Gun_apt_Bedroom_Window_Angle.html"
     }
   },
   "Henrik_house": {
     "Main Entrance Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Main_Entrance_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Main_Entrance_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Main_Entrance_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Main_Entrance_Angle.html"
     },
     "Kitchen door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Kitchen_door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Kitchen_door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Kitchen_door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Kitchen_door_Angle.html"
     },
     "Toilet Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Toilet_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Toilet_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Toilet_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Toilet_Window_Angle.html"
     },
     "Dining Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Dining_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Dining_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Dining_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Dining_Window_Angle.html"
     },
     "TV Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_TV_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_TV_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_TV_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_TV_Window_Angle.html"
     },
     "Henrik Bedroom Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Henrik_Bedroom_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Henrik_Bedroom_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Henrik_Bedroom_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Henrik_Bedroom_Angle.html"
     },
     "Matilda Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Matilda_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Matilda_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Matilda_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Matilda_Window_Angle.html"
     },
     "Albert Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Albert_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Albert_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Albert_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Albert_Window_Angle.html"
     },
     "Skylight Albert Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Skylight_Albert_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Skylight_Albert_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Skylight_Albert_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Skylight_Albert_Angle.html"
     },
     "Corridor Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Henrik_house_Corridor_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Corridor_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Henrik_house_Corridor_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Henrik_house_Corridor_Window_Angle.html"
     }
   },
   "Umea_44_1": {
     "Kitchen Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_1_Kitchen_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_1_Kitchen_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_1_Kitchen_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_1_Kitchen_Window_Angle.html"
     },
     "Living room Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_1_Living_room_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_1_Living_room_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_1_Living_room_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_1_Living_room_Window_Angle.html"
     }
   },
   "Umea_42_7": {
     "Livingroom Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_42_7_Livingroom_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_7_Livingroom_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_42_7_Livingroom_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_7_Livingroom_Door_Angle.html"
     },
     "Bedroom Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_42_7_Bedroom_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_7_Bedroom_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_42_7_Bedroom_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_7_Bedroom_Door_Angle.html"
     }
   },
   "Umea_42_1": {
     "Kitchen Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_42_1_Kitchen_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_1_Kitchen_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_42_1_Kitchen_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_1_Kitchen_Window_Angle.html"
     },
     "Kitchen Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_42_1_Kitchen_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_1_Kitchen_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_42_1_Kitchen_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_1_Kitchen_Door_Angle.html"
     },
     "Living room Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_42_1_Living_room_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_1_Living_room_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_42_1_Living_room_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_42_1_Living_room_Window_Angle.html"
     }
   },
   "Umea_44_4": {
     "Living room Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_4_Living_room_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_4_Living_room_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_4_Living_room_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_4_Living_room_Door_Angle.html"
     },
     "Bedroom Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_4_Bedroom_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_4_Bedroom_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_4_Bedroom_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_4_Bedroom_Door_Angle.html"
     },
-    "Study room Angle": {
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_4_Study_room_Angle.html"
-    }
+    "Study room Angle": {}
   },
   "Umea_44_5": {
     "Balcony Window Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_5_Balcony_Window_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_5_Balcony_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_5_Balcony_Window_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_5_Balcony_Window_Angle.html"
     },
     "Living room Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_5_Living_room_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_5_Living_room_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_5_Living_room_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_5_Living_room_Angle.html"
     }
   },
   "Umea_44_7": {
     "Living room Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_7_Living_room_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_7_Living_room_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_7_Living_room_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_7_Living_room_Door_Angle.html"
     },
     "Bedroom Door Angle": {
       "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Umea_44_7_Bedroom_Door_Angle.html",
-      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_7_Bedroom_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Umea_44_7_Bedroom_Door_Angle.html"
+      "energy_heatmap": "interactive_plots/heatmap_energy_Umea_44_7_Bedroom_Door_Angle.html"
     }
   },
   "Aga_apt": {
     "Kitchen Window Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Kitchen_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Aga_apt_Kitchen_Window_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Kitchen_Window_Angle.html"
     },
     "Livingroom Window Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Livingroom_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Aga_apt_Livingroom_Window_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Livingroom_Window_Angle.html"
     },
     "Balcony Door Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Balcony_Door_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Aga_apt_Balcony_Door_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Balcony_Door_Angle.html"
     },
     "Office Window Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Office_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Aga_apt_Office_Window_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Office_Window_Angle.html"
     },
     "Bedroom Window Angle": {
-      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Bedroom_Window_Angle.html",
-      "angle_timeseries": "interactive_plots/timeseries_angle_Aga_apt_Bedroom_Window_Angle.html"
+      "angle_duration_heatmap": "interactive_plots/heatmap_angle_duration_Aga_apt_Bedroom_Window_Angle.html"
     }
   }
-} 
+}
